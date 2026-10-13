@@ -23,7 +23,7 @@ namespace RogueDungeon
             Console.Write("H");
             Console.ResetColor();
             Console.SetCursorPosition(0, 3);
-            Console.WriteLine($"♥️[{playerHealth}/{maxHealth}] {gold,5}$");
+            Console.WriteLine($"♥️[{playerHealth}/{maxHealth}] ${gold,5}");
 
             int enemyDamage;;
             Console.Write("Введите урон противника: ");
@@ -33,7 +33,7 @@ namespace RogueDungeon
             {
                 playerHealth = 0;
             }
-            Console.WriteLine($"♥️[{playerHealth}/{maxHealth}] {gold,5}$");
+            Console.WriteLine($"♥️[{playerHealth}/{maxHealth}] ${gold,5}");
 
             Console.Write("Двинуться: ");
             var key = Console.ReadKey();
